@@ -6,6 +6,8 @@
  * @param {number} target
  * @return {number[]}
  */
+const input = [2,7,11,15]
+const tar = 9
 var twoSum = (nums, target) => {
     for (let curr = 0; curr < nums.length; curr++) {/* Time O(N) */
         const complement = target - nums[curr];
@@ -21,6 +23,7 @@ var twoSum = (nums, target) => {
     return [ -1, -1 ];
 }
 
+console.log(twoSum(input,tar))
 /**
  * Hash Map - 2 Pass
  * Time O(N) | Space O(N)
